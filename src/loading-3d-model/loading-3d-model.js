@@ -2,6 +2,7 @@
 
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import monkeyModel from './monkey.glb';
 
 // Scene/Camera/Renderer
 
@@ -37,7 +38,8 @@ const loader = new GLTFLoader();
 let monkey;
 loader.load(
     // resource URL - Walther PPK Original.gltf | monkey.glb
-    './monkey.glb',
+    //'./monkey.glb',
+    monkeyModel,
     // called when the resource is loaded
     function (gltf) {
         scene.add(gltf.scene);

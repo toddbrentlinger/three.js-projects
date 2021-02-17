@@ -53,7 +53,10 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            outputPath: 'models',
+                            //outputPath: 'models',
+                            //publicPath: './',
+                            name: '[name].[ext]',
+                            esModule: false,
                         },
                     },
                 ],
