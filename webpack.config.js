@@ -9,6 +9,7 @@ module.exports = {
         print: './src/print.js',
         gettingStarted: './src/getting-started/getting-started.js',
         loading3dModel: './src/loading-3d-model/loading-3d-model.js',
+        updateBufferGeometry: './src/update-buffer-geometry/update-buffer-geometry.js',
     },
     devServer: {
         contentBase: './dist',
@@ -31,6 +32,12 @@ module.exports = {
             template: './src/three-js-template.html',
             chunks: ['loading3dModel'],
             filename: 'loading-3d-model/index.html',
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Update Buffer Geometry',
+            template: './src/three-js-template.html',
+            chunks: ['updateBufferGeometry'],
+            filename: 'update-buffer-geometry/index.html',
         }),
     ],
     output: {

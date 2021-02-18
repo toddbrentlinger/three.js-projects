@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+}
+
+.info {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background-color: transparent;
+    z-index: 1;
+    font-family: monospace;
+}
