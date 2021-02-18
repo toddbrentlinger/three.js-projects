@@ -27,6 +27,7 @@ function init() {
         1, // near clipping plane
         10000 // far clipping plane
     );
+    camera.position.set(0, 0, 1000);
 
     // Renderer
     renderer = new THREE.WebGLRenderer();
